@@ -1,0 +1,78 @@
+body {
+    background: #f2f7f3;
+    margin: 0px;
+    padding: 0px;
+}
+
+.login {
+    padding: 10px;
+    width : 400px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: black solid 1px;
+    background-color: slategray;
+    text-align: center;
+}
+
+.login input[type = "text"] {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.login input[type = "button"] {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    height: 30px;
+    border: coral solid 1px;
+    border-radius: 5px;
+}
+
+.login input[type = "button"]:hover {
+    background-color: darkgoldenrod;
+}
+
+#left {
+    width: 30%;
+    float: left;
+    background-color: darkgrey;
+}
+
+#right {
+    width: 70%;
+    float: right;
+    background-color: darkturquoise;
+}
+
+#boxTitle {
+    padding: 5px;
+    border: black solid 1px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#boxContent {
+    padding: 5px;
+    border: black solid 1px;
+    border-top: none;
+}
+
+#sayHi {
+    text-align: center;
+}
+
+#listMessage {
+    padding: 5px;
+    height: 400px;
+    background-color: lemonchiffon;
+    border: black solid 1px;
+}
+
+#sendMessage {
+    padding: 10px;
+    background-color: lightskyblue;
+    border: black solid 1px;
+    border-top: none;
+}

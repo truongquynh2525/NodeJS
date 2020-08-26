@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Control Snake Wifi</title>
+    <script src = "socket.io/socket.io.js"></script>
+</head>
+<body>
+    <button ontouchstart='sendToServer("up")'>Up</button>
+    <button ontouchstart='sendToServer("down")'>Down</button>
+    <button ontouchstart='sendToServer("left")'>Left</button>
+    <button ontouchstart='sendToServer("right")'>Right</button>
+</body>
+    <script>
+        var socket = io("http://localhost:2000/");
+
+        function sendToServer(direction) {
+            socket.emit('client-send-direction', direction);
+        }
+    </script>
+</html>

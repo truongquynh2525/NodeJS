@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo a chat real time</title>
+    <script src = "jquery.js"></script>
+    <script src = "socket.io/socket.io.js"></script>
+    <script src = "process.js"></script>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+<body>
+    <div id = "wrapper">
+        <div class = "login" id = "loginForm">
+            <h2 id = "status">--Chat Room--</h2> <br/>
+            <input type="text" id = "username" placeholder="Your Name"> <br/>
+            <input type="button" value = "Register" id = "btnRegister"> <br/>
+            <p id = "note" style = "color:red"></p>
+        </div>
+
+        <div class = "chat" id = "chatForm">
+            <div id = "left">
+                <div id = "boxTitle">Users Online</div>
+                <div id = "boxContent"></div>
+            </div>
+            <div id = "right">
+                <div id = "sayHi">
+                    Hello <span id = "currentUser">SO</span>
+                    <input type="button" id = "btnLogout" value="Logout">
+                </div>
+
+                <div id = "listMessage"></div>
+                <div id = "sendMessage">
+                    <input type="text" id = "txtMessage">
+                    <input type="button" id = "btnSendMessage" value = "Send">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
